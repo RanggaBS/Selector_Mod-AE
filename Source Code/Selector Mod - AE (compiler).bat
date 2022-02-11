@@ -1,4 +1,6 @@
+:: Hide the directory path
 @echo off
+
 
 :: Change the window title
 title "Selector Mod - AE (compiler)"
@@ -33,8 +35,13 @@ luac -o SelectorMod_OMods.lur SelectorMod_OMods.lua
 :: Rebuilding the Scripts.img
 echo rebuilding.. (Scripts.img)
 img -open "Scripts.img" -add "STimeCycle.lur" "SelectorMod.lur" "SelectorMod_Effects.lur" "SelectorMod_Setup.lur" "SelectorMod_Props.lur" "SelectorMod_Lib.lur" "SelectorMod_Lib2.lur" "SelectorMod_OMods.lur" -rebuild
+
+
 echo .
 color a
 echo Done.
 echo .
+
+
+:: Pause
 pause
