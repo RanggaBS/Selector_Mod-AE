@@ -3,7 +3,7 @@
 
 
 :: Change the window title
-title "Selector Mod - AE (compiler)"
+title Selector Mod - AE (compiler)
 
 
 :: Compiling the files
